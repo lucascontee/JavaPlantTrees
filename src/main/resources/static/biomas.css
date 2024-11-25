@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #191A1C;
+  color: #FFFFFF;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  background-color: #191A1C;
+  font-size: 12px; 
+
+  & #nav_img{
+      margin-right: 80px;
+      height: 60px;
+      width: 200px;
+  }
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 25px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #71b91e;
+  border-radius: 4px;
+}
+
+h1 {
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 150px;
+  font-size: 50px;
+  color: #2e7237;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bioma {
+  margin-bottom: 30px;
+}
+
+.bioma .esquerda {
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 180px;
+  margin-bottom: 50px;
+
+}
+
+.bioma .direita {
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+  text-align: right;
+  margin-right: 260px;
+  margin-bottom: 50px;
+}
+
+.conteudo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.conteudo img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.conteudo p {
+  font-size: 15px;
+  max-width: 500px;
+  text-align: left;
+}
+
+.bioma .conteudo {
+  flex-direction: row;
+}
+
+.bioma.invert .conteudo {
+  flex-direction: row-reverse;
+}
+
+.bioma .conteudo img {
+  box-shadow: -12px -12px 0 #36802d;
+}
+
+.bioma.invert .conteudo img {
+  box-shadow: 12px -12px 0 #77ab59;
+}
+
+footer{
+  height: 300px;
+  margin-top: 100px;
+  padding: 0px 70px;
+  background-color: #191A1C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .container_footer {
+      width: 100%;
+      flex-direction: column;
+  }
+
+
+  & .footer_txt {
+      height: 50%;
+      border-bottom: 1px solid rgb(185, 185, 185);
+      display: flex;
+      padding-bottom: 20px;
+      justify-content: space-evenly;
+  }
+
+  & .div_footer_text {
+      color: white;
+      width: 200px;
+  }
+
+  & .div_footer_text h1{
+      font-size: 1.5em;
+      color: white;
+  }
+
+  & .div_footer_text p{
+      margin-top: 10px;
+      font-size: 0.8em;
+  }
+
+  & .footer_info {
+      margin-top: 20px;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+}

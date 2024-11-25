@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dela+Gothic+One&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;   
+    background-color: #191A1C;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    background-color: #191A1C;
+    font-size: 12px; 
+
+    & #nav_img{
+        margin-right: 80px;
+        height: 60px;
+        width: 200px;
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+  
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 25px;
+    transition: background-color 0.3s;
+}
+  
+nav ul li a:hover {
+    background-color: #71b91e;
+    border-radius: 4px;
+}

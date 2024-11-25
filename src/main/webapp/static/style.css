@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dela+Gothic+One&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans",sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #191A1C;
+}
+
+nav{
+    font-family: "Crimson Text",sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    background-color: #191A1C;
+    font-size: 12px;
+
+    & #nav_img{
+        margin-right: 80px;
+        height: 60px;
+        width: 200px;
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 25px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #71b91e;
+    border-radius: 4px;
+}
+
+.container {
+    margin-left: 365px;
+    margin-top: 10px;
+    max-width: 700px;
+    width: 100%;
+    padding: 30px;
+    background-color: #2E7237;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+input, select, button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #191A1C;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(158, 158, 158);
+    color: black;
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #3d9149;
+    border-radius: 3px;
+    color: #0e0b0b;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+table tbody tr td {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    input, select, button {
+        font-size: 14px;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+}
+
+footer{
+    margin-top: 50px;
+    height: 300px;
+    padding: 0px 70px;
+    background-color: #191A1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .container_footer {
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+    & .footer_txt {
+        height: 50%;
+        border-bottom: 1px solid rgb(185, 185, 185);
+        display: flex;
+        padding-bottom: 20px;
+        justify-content: space-evenly;
+    }
+
+    & .div_footer_text {
+        color: white;
+        width: 200px;
+    }
+
+    & .div_footer_text h1{
+        font-size: 1.5em;
+        color: white;
+    }
+
+    & .div_footer_text p{
+        margin-top: 10px;
+        font-size: 0.8em;
+    }
+
+    & .footer_info {
+        margin-top: 20px;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
